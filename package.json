@@ -1,0 +1,36 @@
+{
+  "name": "strategy-implementation",
+  "version": "1.0.0",
+  "description": "A way to identify payment types by user input",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "DEBUG=app:* node src/index.js",
+    "test": "DEBUG=app:* jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasffilho/node-strategy-implementation.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "strategy",
+    "design",
+    "pattern",
+    "customer",
+    "payment"
+  ],
+  "author": "Douglas Filho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/douglasffilho/node-strategy-implementation/issues"
+  },
+  "homepage": "https://github.com/douglasffilho/node-strategy-implementation#readme",
+  "devDependencies": {
+    "jest": "^26.4.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "prompts": "^2.3.2"
+  }
+}
