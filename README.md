@@ -2,7 +2,7 @@
 Implementation of Strategy Design Pattern
 
 ---
-### The main focus of this project is to show how we can implement an clean node strategy to apply customer payment on a isolated scenary
+### The main focus of this project is to show how we can implement an clean node strategy to apply to a customer payment flux on an isolated scenary
 
 ---
 ### Requirements
