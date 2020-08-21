@@ -2,7 +2,7 @@ const process = require('process');
 
 const CloseAppAction = {
     run() {
-        process.exit(0);
+        return process.exit(0);
     }
 };
 

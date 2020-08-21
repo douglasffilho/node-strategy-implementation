@@ -11,10 +11,15 @@ const ActionsStrategy = {
     runAction(actionDefinition) {
         const action = actions[actionDefinition] || actions.default;
         try {
-            action.run();
+            return action.run();
         } catch (error) {
             log.error(error.message);
+            return false;
         }
+    },
+    // For test purposes
+    injectAction(name, action) {
+        actions[name] = action;
     }
 };
 
