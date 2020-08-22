@@ -1,13 +1,9 @@
 const { credit, debit } = require('../domain/cards');
+const cards = [credit, debit];
 
 const CardsRespository = {
-    credit: {
-        ...credit,
-        amount: Number(4200.0)
-    },
-    debit: {
-        ...debit,
-        amount: Number(420.0)
+    findByCode(cardCode) {
+        return cards.filter(card => card.code === cardCode);
     }
 };
 
