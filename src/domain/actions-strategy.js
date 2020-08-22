@@ -1,5 +1,5 @@
 const { defaultAction, closeAppAction } = require('./actions');
-const log = require('../util/Log')('action-strategy');
+const log = require('../util/log')('action-strategy');
 
 const actions = {
     default: defaultAction,
