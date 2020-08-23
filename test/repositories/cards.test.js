@@ -1,17 +1,25 @@
 const { cardsRepository } = require('../../src/repositories');
 
 describe('CardsRepository tests', () => {
-    test('should get amount of credit card', () => {
+    test('should find credit card by code', () => {
+        // given
+        const cardCode = '**** **** **** 4200';
         // when
-        const { amount } = cardsRepository.credit;
+        const card = cardsRepository.findByCode(cardCode);
         // then
-        expect(amount).toBe(Number(4200.0));
+        const { code, type } = card;
+        expect(code).toBe(cardCode);
+        expect(type).toBe('credit');
     });
 
-    test('should get amount of debit card', () => {
+    test('should find debit card by code', () => {
+        // given
+        const cardCode = '**** **** **** 0042';
         // when
-        const { amount } = cardsRepository.debit;
+        const card = cardsRepository.findByCode(cardCode);
         // then
-        expect(amount).toBe(Number(420.0));
+        const { code, type } = card;
+        expect(code).toBe(cardCode);
+        expect(type).toBe('debit');
     });
 });
