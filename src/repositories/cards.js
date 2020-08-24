@@ -6,7 +6,7 @@ const CardsRespository = {
         return cards;
     },
     findByCode(cardCode) {
-        return (cards.filter((card) => card.code === cardCode) || [{}])[0];
+        return cards.filter((card) => card.code === cardCode)[0];
     }
 };
 

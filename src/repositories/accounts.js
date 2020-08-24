@@ -3,7 +3,7 @@ const accounts = [debit, credit];
 
 const AccountsRepository = {
     findByCardCode(cardCode) {
-        return (accounts.filter((account) => account.cardCode === cardCode) || [{}])[0];
+        return accounts.filter((account) => account.cardCode === cardCode)[0];
     }
 }
 
